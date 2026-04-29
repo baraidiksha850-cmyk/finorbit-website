@@ -1,0 +1,266 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+ 
+body{
+  background:#fff4dc;
+  color:#341407;
+}
+ 
+.login-page{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(rgba(70,15,5,.8),rgba(0,0,0,.8)),
+  url("https://images.unsplash.com/photo-1599661046289-e31897846e41");
+  background-size:cover;
+  background-position:center;
+}
+ 
+.login-container{
+  width:360px;
+  padding:35px;
+  background:white;
+  border-radius:20px;
+  text-align:center;
+  border:3px solid gold;
+}
+ 
+.login-container h1{
+  color:#7a1c0b;
+  font-size:38px;
+}
+ 
+.login-container p{
+  margin:10px 0 20px;
+}
+ 
+input{
+  width:100%;
+  padding:13px;
+  margin:10px 0;
+  border-radius:8px;
+  border:1px solid #c49b23;
+}
+ 
+button{
+  width:100%;
+  padding:13px;
+  margin-top:10px;
+  background:linear-gradient(135deg,#7a1c0b,gold);
+  color:white;
+  border:none;
+  border-radius:10px;
+  font-size:17px;
+  font-weight:bold;
+  cursor:pointer;
+}
+ 
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px 60px;
+  background:#4b1208;
+  color:gold;
+  position:sticky;
+  top:0;
+}
+ 
+nav ul{
+  display:flex;
+  list-style:none;
+  gap:25px;
+}
+ 
+nav a{
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+}
+ 
+nav a:hover{
+  color:gold;
+}
+ 
+.hero{
+  padding:80px;
+  text-align:center;
+  color:white;
+  background:linear-gradient(rgba(75,18,8,.85),rgba(0,0,0,.7)),
+  url("https://images.unsplash.com/photo-1518546305927-5a555bb7020d");
+  background-size:cover;
+  background-position:center;
+}
+ 
+.hero h1{
+  font-size:50px;
+  color:gold;
+}
+ 
+.hero p{
+  font-size:20px;
+  margin-top:15px;
+}
+ 
+section{
+  padding:60px 8%;
+}
+ 
+section h2{
+  text-align:center;
+  color:#7a1c0b;
+  font-size:35px;
+  margin-bottom:30px;
+}
+ 
+.cards{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+}
+ 
+.card{
+  background:white;
+  padding:30px;
+  text-align:center;
+  border-radius:18px;
+  border-top:5px solid gold;
+  box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+ 
+.card h3{
+  color:#7a1c0b;
+  font-size:28px;
+}
+ 
+table{
+  width:100%;
+  border-collapse:collapse;
+  background:white;
+  border-radius:15px;
+  overflow:hidden;
+}
+ 
+th{
+  background:#7a1c0b;
+  color:gold;
+}
+ 
+th,td{
+  padding:16px;
+  border:1px solid #ddd;
+  text-align:center;
+}
+ 
+.goals{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+ 
+.goal{
+  background:white;
+  padding:25px;
+  border-radius:18px;
+  box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+ 
+.goal h3{
+  color:#7a1c0b;
+  margin-bottom:10px;
+}
+ 
+progress{
+  width:100%;
+  height:18px;
+}
+ 
+footer{
+  text-align:center;
+  padding:22px;
+  background:#4b1208;
+  color:gold;
+}
+ 
+@media(max-width:900px){
+  nav{
+    flex-direction:column;
+    gap:15px;
+  }
+ 
+  nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+ 
+  .cards,
+  .goals{
+    grid-template-columns:1fr;
+  }
+ 
+  .hero h1{
+    font-size:36px;
+  }
+}
+.setup-page{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(rgba(75,18,8,.85),rgba(0,0,0,.85)),
+  url("https://images.unsplash.com/photo-1599661046289-e31897846e41");
+  background-size:cover;
+  background-position:center;
+}
+ 
+.setup-container{
+  width:480px;
+  background:white;
+  color:#341407;
+  padding:35px;
+  border-radius:22px;
+  border:3px solid gold;
+  box-shadow:0 10px 30px rgba(0,0,0,.4);
+}
+ 
+.setup-container h1{
+  text-align:center;
+  color:#7a1c0b;
+  margin-bottom:10px;
+}
+ 
+.setup-container p{
+  text-align:center;
+  margin-bottom:25px;
+}
+ 
+.setup-container label{
+  display:block;
+  font-weight:bold;
+  margin-top:12px;
+  margin-bottom:6px;
+}
+ 
+.setup-container input,
+.setup-container select{
+  width:100%;
+  padding:13px;
+  border-radius:8px;
+  border:1px solid #c49b23;
+}
+ 
+.checkbox-group{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+  margin:12px 0 20px;
+}
+ 
+.checkbox-group label{
+  font-weight:normal;
+}
