@@ -1,40 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Bank Setup</title>
+  <title>FinOrbit Setup</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="setup-page">
- 
-<div class="setup-container">
-  <h1>Set Up Bank Details</h1>
-  <p>Add what you want to track</p>
- 
+
+<div class="setup-container large-setup">
+  <h1>Set Up Your Financial Profile</h1>
+  <p>Enter details you want to track in FinOrbit</p>
+
   <label>Bank Name</label>
   <input type="text" id="bank" placeholder="Example: SBI, HDFC, ICICI">
- 
+
   <label>Account Type</label>
   <select id="accountType">
     <option value="">Select Account Type</option>
     <option>Savings Account</option>
     <option>Salary Account</option>
     <option>Current Account</option>
-    <option>Credit Card</option>
-    <option>Loan Account</option>
   </select>
- 
-  <label>Current Balance</label>
-  <input type="number" id="balance" placeholder="Enter balance">
- 
+
+  <label>Current Bank Balance</label>
+  <input type="number" id="balance" placeholder="Enter bank balance">
+
   <label>Monthly Income</label>
   <input type="number" id="income" placeholder="Enter monthly income">
- 
+
   <label>Monthly Expense</label>
   <input type="number" id="expense" placeholder="Enter monthly expense">
- 
+
+  <label>Credit Card Usage</label>
+  <input type="number" id="creditCard" placeholder="Enter credit card used amount">
+
+  <label>Investment Amount</label>
+  <input type="number" id="investment" placeholder="Enter investment amount">
+
+  <label>Loan Amount</label>
+  <input type="number" id="loan" placeholder="Enter loan amount">
+
+  <label>Main Financial Goal</label>
+  <input type="text" id="goalName" placeholder="Example: Emergency Fund, Car, Education">
+
+  <label>Goal Target Amount</label>
+  <input type="number" id="goalTarget" placeholder="Enter goal target amount">
+
+  <label>Current Goal Saving</label>
+  <input type="number" id="goalSaved" placeholder="Enter saved amount">
+
+  <label>How do you want to track?</label>
+  <select id="trackingType">
+    <option value="">Select Tracking Type</option>
+    <option>Weekly</option>
+    <option>Monthly</option>
+    <option>Both Weekly and Monthly</option>
+  </select>
+
   <button id="saveSetupBtn">Save & Continue</button>
 </div>
- 
+
 <script type="module" src="script.js"></script>
 </body>
 </html>
