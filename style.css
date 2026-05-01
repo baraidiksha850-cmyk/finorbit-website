@@ -264,3 +264,10 @@ footer{
 .checkbox-group label{
   font-weight:normal;
 }
+.link-text{
+  margin-top:15px;
+}
+ 
+.link-text a{
+  color:#7a1c0b;
+  font-weight:bold;}
