@@ -9,101 +9,63 @@
 <nav>
   <h2>FinOrbit</h2>
   <ul>
-    <li><a href="#dashboard">Dashboard</a></li>
-    <li><a href="#expenses">Expenses</a></li>
-    <li><a href="#goals">Goals</a></li>
-    <li><a href="index.html">Logout</a></li>
+    <li><a href="setup.html">Edit Bank Setup</a></li>
+    <li><a href="#" id="logoutBtn">Logout</a></li>
   </ul>
 </nav>
  
 <section class="hero">
   <h1>Welcome to FinOrbit</h1>
-  <p>Your royal Rajasthani financial health dashboard</p>
+  <p>Your personal financial health dashboard</p>
 </section>
  
-<section id="dashboard">
-  <h2>Financial Overview</h2>
+<section>
+  <h2>Your Bank Details</h2>
  
   <div class="cards">
     <div class="card">
-      <h3>₹85,000</h3>
-      <p>Total Balance</p>
+      <h3 id="bankName">-</h3>
+      <p>Bank Name</p>
     </div>
  
     <div class="card">
-      <h3>₹24,500</h3>
-      <p>Monthly Expenses</p>
+      <h3 id="accountTypeText">-</h3>
+      <p>Account Type</p>
     </div>
  
     <div class="card">
-      <h3>₹18,000</h3>
-      <p>Savings</p>
+      <h3 id="balanceText">₹0</h3>
+      <p>Current Balance</p>
     </div>
  
     <div class="card">
-      <h3>78%</h3>
+      <h3 id="healthScore">0%</h3>
       <p>Health Score</p>
     </div>
   </div>
 </section>
  
-<section id="expenses">
-  <h2>Expense Tracking</h2>
+<section>
+  <h2>Monthly Tracking</h2>
  
   <table>
     <tr>
-      <th>Category</th>
-      <th>Amount</th>
-      <th>Status</th>
+      <th>Income</th>
+      <th>Expense</th>
+      <th>Savings</th>
     </tr>
- 
     <tr>
-      <td>Food</td>
-      <td>₹6,000</td>
-      <td>Normal</td>
-    </tr>
- 
-    <tr>
-      <td>Rent</td>
-      <td>₹12,000</td>
-      <td>High</td>
-    </tr>
- 
-    <tr>
-      <td>Travel</td>
-      <td>₹3,500</td>
-      <td>Normal</td>
+      <td id="incomeText">₹0</td>
+      <td id="expenseText">₹0</td>
+      <td id="savingText">₹0</td>
     </tr>
   </table>
-</section>
- 
-<section id="goals">
-  <h2>Goal-Based Planning</h2>
- 
-  <div class="goals">
-    <div class="goal">
-      <h3>Emergency Fund</h3>
-      <p>Target: ₹1,00,000</p>
-      <progress value="45" max="100"></progress>
-    </div>
- 
-    <div class="goal">
-      <h3>Buy a Car</h3>
-      <p>Target: ₹5,00,000</p>
-      <progress value="22" max="100"></progress>
-    </div>
- 
-    <div class="goal">
-      <h3>Education Plan</h3>
-      <p>Target: ₹2,00,000</p>
-      <progress value="35" max="100"></progress>
-    </div>
-  </div>
 </section>
  
 <footer>
   © 2026 FinOrbit | Royal Rajasthani Theme
 </footer>
  
+<script type="module" src="script.js"></script>
 </body>
 </html>
