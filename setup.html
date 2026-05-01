@@ -1,45 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>FinOrbit Bank Setup</title>
+  <title>Bank Setup</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="setup-page">
  
-  <div class="setup-container">
-    <h1>Set Up Your Bank Details</h1>
-    <p>Select what you want to track in FinOrbit</p>
+<div class="setup-container">
+  <h1>Set Up Bank Details</h1>
+  <p>Add what you want to track</p>
  
-    <label>Bank Name</label>
-    <input type="text" id="bank" placeholder="Example: SBI, HDFC, ICICI">
+  <label>Bank Name</label>
+  <input type="text" id="bank" placeholder="Example: SBI, HDFC, ICICI">
  
-    <label>Account Type</label>
-    <select id="accountType">
-      <option value="">Select Account Type</option>
-      <option>Savings Account</option>
-      <option>Current Account</option>
-      <option>Salary Account</option>
-      <option>Credit Card</option>
-      <option>Loan Account</option>
-    </select>
+  <label>Account Type</label>
+  <select id="accountType">
+    <option value="">Select Account Type</option>
+    <option>Savings Account</option>
+    <option>Salary Account</option>
+    <option>Current Account</option>
+    <option>Credit Card</option>
+    <option>Loan Account</option>
+  </select>
  
-    <label>Current Balance</label>
-    <input type="number" id="balance" placeholder="Enter current balance">
+  <label>Current Balance</label>
+  <input type="number" id="balance" placeholder="Enter balance">
  
-    <label>What do you want to track?</label>
+  <label>Monthly Income</label>
+  <input type="number" id="income" placeholder="Enter monthly income">
  
-    <div class="checkbox-group">
-      <label><input type="checkbox"> Expenses</label>
-      <label><input type="checkbox"> Savings</label>
-      <label><input type="checkbox"> Investments</label>
-      <label><input type="checkbox"> Loans</label>
-      <label><input type="checkbox"> Credit Cards</label>
-      <label><input type="checkbox"> Goals</label>
-    </div>
+  <label>Monthly Expense</label>
+  <input type="number" id="expense" placeholder="Enter monthly expense">
  
-    <button onclick="saveSetup()">Continue to Dashboard</button>
-  </div>
+  <button id="saveSetupBtn">Save & Continue</button>
+</div>
  
-<script src="script.js"></script>
+<script type="module" src="script.js"></script>
 </body>
 </html>
